@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8"/>
         <title>About | Mimi Clinic</title>
@@ -25,8 +25,10 @@
         <link href="" rel="canonical"/>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="/images/favicon-1.png">
+        <link href="/css/design.css" rel="stylesheet" type="text/css">
     </head>
     <body class="body about-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
         <div class="nav-loader">
             <div class="loader-wrapper">
                 <picture>
@@ -38,11 +40,11 @@
         <div class="navigation nav">
             <div class="navigation-bg"></div>
             <div class="navigation-wrap">
-                <a href="/" aria-current="page" class="logo-link nav-brand" aria-label="home">
+                <a href="/" class="logo-link nav-brand" aria-label="home">
                     <picture>
                         <source srcset="/images/animated-logo-w.webp" type="image/webp">
                         <source srcset="/images/logo-600-w.png" type="image/png">
-                        <img src="/images/animated-logo-w.png" width="100" class="logo-image">
+                        <img src="/images/animated-logo-w.png" width="100" class="logo-image" alt="Mimi Clinic">
                     </picture>
                 </a>
                 <div class="menu">
@@ -50,28 +52,30 @@
                         <nav class="navigation-items">
                             <a class="navigation-item nav-link" href="/treatments">TREATMENTS</a>
                             <a class="navigation-item nav-link" href="/pricing">PRICING</a>
-                            <a class="navigation-item nav-link" href="/about">ABOUT</a>
+                            <a class="navigation-item nav-link" href="/about" aria-current="page">ABOUT</a>
                             <a class="navigation-item nav-link" href="/contact">CONTACT</a>
                         </nav>
                     </div>
 
-                    <div class="menu-button nav-button" style="-webkit-user-select: none;user-select: none;" aria-label="menu" role="button" tabindex="0" aria-haspopup="menu" aria-expanded="false">
+                    <button type="button" class="menu-button nav-button" style="-webkit-user-select: none;user-select: none;" aria-label="menu" role="button" tabindex="0" aria-haspopup="menu" aria-expanded="false" aria-controls="navHolder">
                         <img src="/images/menu-icon-w.png" width="22" alt="" class="menu-icon">
-                    </div>
+                    </button>
                 </div>
             </div>
             <div class="nav-overlay" id="nav-overlay"></div>
         </div>
+        <main id="main-content" tabindex="-1">
         <div class="section page-hero about-page-hero">
             <div class="intro-content header-content">
-                <div class="heading-jumbo header josefin-sans-700">About Us</div>
+                <p class="eyebrow">The people behind your care</p>
+                <h1 class="heading-jumbo header josefin-sans-700">About Us</h1>
                 <br>
                 <p class="heading-paragraph josefin-sans-400">Enhancing your natural beauty, restoring your confidence</p>
             </div>
         </div>
          <div class="container">
             <div class="motto-wrap py-10 text-center">
-                <p class="mb-5 text-5xl josefin-sans-200 font-bold">Our Philosophy</p>
+                <h2 class="mb-5 text-5xl josefin-sans-200 font-bold">Our Philosophy</h2>
                 <p class="heading about sm:text-lg md:text-xl xl:text-2xl leading-relaxed font-normal text-center">
                 At Mimi Clinic, we believe that aesthetic treatments should never change who you are—they should simply help you become the most confident version of yourself. From the moment you walk through our doors in Bray, our focus is entirely on your comfort, safety, and well-being.
                 </p>
@@ -80,14 +84,13 @@
             <div class="divider w-full h-px bg-gray-200 my-10"></div>
             
             <div class="about-story-wrap py-10 text-center">
-                <h3 class="mb-5 text-5xl josefin-sans-200 font-bold">Our Story</h3>
+                <h2 class="mb-5 text-5xl josefin-sans-200 font-bold">Our Story</h2>
                 <p class="heading about sm:text-lg md:text-xl xl:text-2xl leading-relaxed font-normal text-center">
                 Founded by a highly experienced aesthetician with a passion for facial harmony and skin health, Mimi Clinic was born out of a desire to provide world-class treatments in a warm, welcoming environment. We understand that taking the step to explore aesthetic treatments can be daunting. That is why we place consultation and education at the forefront of everything we do. We take the time to listen to your goals, assess your unique features, and design a bespoke treatment plan that delivers beautiful, natural-looking results.
                 </p>
             </div>
             
             <div class="divider w-full h-px bg-gray-200 my-10"></div>
-            </div>
         </div>
 
         <div class="section about mb-20">
@@ -125,6 +128,7 @@
             </div>
             </div>
         </div>
+        </main>
         <div class="footer px-10 pt-10 mt-3">
             <div class="footer-logo-container mx-auto max-w-2xl mb-10">
                 <picture>
@@ -166,6 +170,6 @@
             </div>
             <p class="text-center josefin-sans-200 text-sm">© 2026 Mimi Aesthetics.</p>
         </div>
-    </body>
     <script src="/js/main.min.js" type="text/javascript"></script>
+</body>
 </html>
